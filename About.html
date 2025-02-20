@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | CyberSecure</title>
+    <link rel="stylesheet" href="About.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🔒HackShield Educators</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="News&Blogs.html">News&Blogs</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2><span>HackShield Educators</span></h2>
+                <p>HackShield Educators is dedicated to educating individuals and businesses on cybersecurity best practices to stay safe online.</p>
+                <p>Our mission is to provide reliable information, resources, and tools to protect digital assets.</p>
+                <p>With expert-backed knowledge and real-time updates, we ensure that cybersecurity awareness is accessible to everyone.</p>
+            </div>
+            <div class="about-image">
+                <div class="slideshow-container">
+                    <img src="Pictures/pic2.jpg" alt="Cybersecurity Image 1" class="active">
+                    <img src="Pictures/pic1.jpg" alt="Cybersecurity Image 2">
+                    <img src="Pictures/pic3.jpg" alt="Cybersecurity Image 3">
+                </div>
+                <p class="slideshow-caption">Our team educating the Students of ABOSO METHODIST JHS during our cybersecurity campagne in the Western Region.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>CyberSecure</h3>
+                <p>Your trusted source for cybersecurity education.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="News&Blogs.html">News&Blogs</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <h4>Follow Us</h4>
+                <a href="https://www.linkedin.com/in/judithsackey1234" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Juddieee/Cyberawareness.github.io" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.snapchat.com/add/xoxo_juddie?share_id=wmEtC1XCSciksr3pMbNriQ&locale=en_GH" target="_blank"><i class="bx bxl-snapchat"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2024 HackShield Educators. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slideshow-container img");
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove("active");
+                if (index === slideIndex) {
+                    slide.classList.add("active");
+                }
+            });
+
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 3000); 
+    </script>
+</body>
+</html>
