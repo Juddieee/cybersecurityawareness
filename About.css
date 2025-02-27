@@ -80,7 +80,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px; /* Added gap between sections */
 }
+
 .video-container, .slideshow-container {
     position: relative;
     width: 100%;
@@ -142,6 +144,7 @@ nav ul li a:hover {
     max-width: 450px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Added spacing between images and video */
 }
 
 footer {
@@ -222,6 +225,7 @@ footer {
         margin-top: 20px;
     }
 }
+
 .slideshow-container {
     position: relative;
     width: 100%;
